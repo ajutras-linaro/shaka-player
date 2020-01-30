@@ -139,6 +139,7 @@ shakaDemo.Main = class {
     this.initCommon_();
 
     this.support_ = await shaka.Player.probeSupport();
+    this.support_.manifest['mpd'] = true;
 
     this.video_ =
         /** @type {!HTMLVideoElement} */(document.getElementById('video'));
