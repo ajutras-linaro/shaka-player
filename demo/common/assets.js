@@ -1030,4 +1030,85 @@ shakaAssets.testAssets = [
       .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
       .addFeature(shakaAssets.Feature.LIVE),
   // }}}
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, H.264, HD, Widevine)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears_hd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, H.264, 4k, Widevine)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears_uhd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)	
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, H.264, HD, Clear)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_hd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, H.264, 4k, Clear)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_uhd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, HEVC, HD, Widevine)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears_hd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, HEVC, 4k, Widevine)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears_uhd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, HEVC, HD, Clear)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/hevc/tears/tears_hd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION),
+
+  new ShakaDemoAssetInfo(
+      /* name= */ 'AJ Tears, HEVC, 4k, Clear)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/hevc/tears/tears_uhd.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION),
+
 ];
