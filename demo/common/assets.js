@@ -203,7 +203,6 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A serious documentary about a problem plaguing video developers.') // eslint-disable-line max-len
-    .markAsFeatured('Big Buck Bunny: the Dark Truths')
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -214,7 +213,6 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A clip from a classic Star Trek TNG episode, presented in MPEG-DASH.') // eslint-disable-line max-len
-    .markAsFeatured('Angel One')
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -334,7 +332,6 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-widevine/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A Blender Foundation short film, protected by Widevine encryption.') // eslint-disable-line max-len
-    .markAsFeatured('Sintel')
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -400,7 +397,6 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/dig-the-uke-clear/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('An audio-only presentation performed by Stefan Kartenberg.') // eslint-disable-line max-len
-    .markAsFeatured('Dig the Uke')
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.AUDIO_ONLY)
@@ -460,7 +456,6 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-live-assets/player-source.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A self-indulgent HLS livestream.')
-    .markAsFeatured('Shaka Player History')
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.LIVE)
@@ -1032,7 +1027,7 @@ shakaAssets.testAssets = [
   // }}}
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, H.264, HD, Widevine)',
+      /* name= */ 'Widevine Test Portal, H.264, HD, Widevine)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears_hd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1040,10 +1035,11 @@ shakaAssets.testAssets = [
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
-    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test')
+    .markAsFeatured('Widevine test portal, H.264, HD, Widevine'),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, H.264, 4k, Widevine)',
+      /* name= */ 'Widevine Test Portal, H.264, 4k, Widevine)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears_uhd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1051,28 +1047,31 @@ shakaAssets.testAssets = [
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)	
-    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test')
+    .markAsFeatured(''),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, H.264, HD, Clear)',
+      /* name= */ 'Widevine Test Portal, H.264, HD, Clear)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_hd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
-    .addFeature(shakaAssets.Feature.HIGH_DEFINITION),
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .markAsFeatured(''),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, H.264, 4k, Clear)',
+      /* name= */ 'Widevine Test Portal, H.264, 4k, Clear)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/h264/tears/tears_uhd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
-    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION),
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
+    .markAsFeatured(''),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, HEVC, HD, Widevine)',
+      /* name= */ 'Widevine Test Portal, HEVC, HD, Widevine)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears_hd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1080,10 +1079,11 @@ shakaAssets.testAssets = [
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
-    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test')
+    .markAsFeatured(''),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, HEVC, 4k, Widevine)',
+      /* name= */ 'Widevine Test Portal, HEVC, 4k, Widevine)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears_uhd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1091,24 +1091,27 @@ shakaAssets.testAssets = [
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
-    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test'),
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test')
+    .markAsFeatured(''),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, HEVC, HD, Clear)',
+      /* name= */ 'Widevine Test Portal, HEVC, HD, Clear)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/hevc/tears/tears_hd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
-    .addFeature(shakaAssets.Feature.HIGH_DEFINITION),
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .markAsFeatured(''),
 
   new ShakaDemoAssetInfo(
-      /* name= */ 'AJ Tears, HEVC, 4k, Clear)',
+      /* name= */ 'Widevine Test Portal, HEVC, 4k, Clear)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/clear/hevc/tears/tears_uhd.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
-    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION),
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
+    .markAsFeatured(''),
 
 ];
