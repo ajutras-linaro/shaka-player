@@ -1171,4 +1171,158 @@ shakaAssets.testAssets = [
     .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
     .markAsFeatured(''),
 
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): HDCP not specified',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=d286538032258a1c&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): HDCP not required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=48fcc369939ac96c&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): HDCP required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=e06c39f1151da3df&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): Secure video path required (MP4,H264)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=0894c7c8719b28a0&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): Secure video path required (MP4,VP9)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/vp9/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=0894c7c8719b28a0&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): Secure video path required (MP4,H265)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=0894c7c8719b28a0&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): HDCP + secure video path required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=efd045b1eb61888a&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine DASH Policy Test(GTS): 30s license duration (fails at ~30s)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=f9a34cab7b05881a&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine HDCP Capabilities Tests: None (not required)',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=HDCP_None&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine HDCP Capabilities Tests: HDCP 1.0 required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=HDCP_V1&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine HDCP Capabilities Tests: HDCP 2.0 required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=HDCP_V2&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine HDCP Capabilities Tests: HDCP 2.1 required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=HDCP_V2_1&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine HDCP Capabilities Tests: HDCP 2.2 required',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=HDCP_V2_2&provider=widevine_test'),
+
+   new ShakaDemoAssetInfo(
+      /* name= */ 'Widevine HDCP Capabilities Tests: No digital output',
+      /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
+      /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
+      /* source= */ shakaAssets.Source.CUSTOM)
+    .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .addFeature(shakaAssets.Feature.DASH)
+    .addFeature(shakaAssets.Feature.MP4)
+    .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
+    .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=HDCP_NO_DIGTAL_OUTPUT&provider=widevine_test'),
+
 ];
