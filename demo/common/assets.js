@@ -192,6 +192,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dark_truth.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -202,6 +203,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dark_truth.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addDescription('A serious documentary about a problem plaguing video developers.') // eslint-disable-line max-len
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -213,6 +215,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/angel-one/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A clip from a classic Star Trek TNG episode, presented in MPEG-DASH.') // eslint-disable-line max-len
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -226,6 +229,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/angel-one-widevine/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -241,6 +245,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/angel-one-clearkey/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addKeySystem(shakaAssets.KeySystem.CLEAR_KEY)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -254,6 +259,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/angel_one.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/angel-one-hls/hls.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -267,6 +273,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/angel-one-widevine-hls/hls.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -281,6 +288,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -294,6 +302,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-trickplay/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.SUBTITLES)
@@ -307,6 +316,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-webm-only/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.SUBTITLES)
@@ -319,6 +329,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-mp4-only/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -333,6 +344,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A Blender Foundation short film, protected by Widevine encryption.') // eslint-disable-line max-len
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -348,6 +360,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-mp4-wvtt/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -360,6 +373,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-many-subs/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.SUBTITLES)
@@ -371,6 +385,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/heliocentricism.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/heliocentrism/heliocentrism.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPERIOD)
@@ -381,6 +396,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/heliocentricism.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/heliocentrism-xlink/heliocentrism.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPERIOD)
@@ -397,6 +413,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/dig-the-uke-clear/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('An audio-only presentation performed by Stefan Kartenberg.') // eslint-disable-line max-len
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.AUDIO_ONLY)
@@ -412,6 +429,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/dig-the-uke/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.AUDIO_ONLY)
@@ -423,6 +441,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/tos-ttml/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -435,6 +454,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/tos-surround/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.SURROUND)
@@ -445,6 +465,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/shaka.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-live-assets/player-source.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.LIVE)
@@ -456,6 +477,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-live-assets/player-source.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
     .addDescription('A self-indulgent HLS livestream.')
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.LIVE)
@@ -471,6 +493,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.AXINOM)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -489,6 +512,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.AXINOM)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -508,6 +532,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.AXINOM)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -526,6 +551,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://media.axprod.net/TestVectors/v7-Clear/Manifest.mpd',
       /* source= */ shakaAssets.Source.AXINOM)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -540,6 +566,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://media.axprod.net/TestVectors/v7-Clear/Manifest_MultiPeriod.mpd',
       /* source= */ shakaAssets.Source.AXINOM)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -565,6 +592,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/axinom_test.png',
       /* manifestUri= */ 'https://akamai-axtest.akamaized.net/routes/lapd-v1-acceptance/www_c4/Manifest.m3u8',
       /* source= */ shakaAssets.Source.AXINOM)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.LIVE)
     .addFeature(shakaAssets.Feature.MP4),
@@ -577,6 +605,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.mpd',
       /* source= */ shakaAssets.Source.UNIFIED_STREAMING)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -586,6 +615,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-multiple-subtitles.ism/.m3u8',
       /* source= */ shakaAssets.Source.UNIFIED_STREAMING)
+      .markAsDisabled()
       .addFeature(shakaAssets.Feature.HLS)
       .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
       .addFeature(shakaAssets.Feature.MP4)
@@ -598,6 +628,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-dash-widevine.ism/.mpd',
       /* source= */ shakaAssets.Source.UNIFIED_STREAMING)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -610,6 +641,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-dash-playready.ism/.mpd',
       /* source= */ shakaAssets.Source.UNIFIED_STREAMING)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -621,6 +653,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-en.ism/.mpd',
       /* source= */ shakaAssets.Source.UNIFIED_STREAMING)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -636,6 +669,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/big_buck_bunny.png',
       /* manifestUri= */ 'https://dash.akamaized.net/dash264/TestCases/1c/qualcomm/2/MultiRate.mpd',
       /* source= */ shakaAssets.Source.DASH_IF)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -645,6 +679,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dash_if_test_pattern.png',
       /* manifestUri= */ 'https://livesim.dashif.org/livesim/utc_head/testpic_2s/Manifest.mpd',
       /* source= */ shakaAssets.Source.DASH_IF)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.LIVE)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.DASH),
@@ -673,6 +708,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dash_if_test_pattern.png',
       /* manifestUri= */ 'https://livesim.dashif.org/livesim/segtimeline_1/startrel_-20/stoprel_20/timeoffset_0/testpic_2s/Manifest.mpd',
       /* source= */ shakaAssets.Source.DASH_IF)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4),
   new ShakaDemoAssetInfo(
@@ -680,6 +716,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dash_if_test_pattern.png',
       /* manifestUri= */ 'https://livesim.dashif.org/livesim/startrel_-20/stoprel_20/timeoffset_0/testpic_2s/Manifest.mpd',
       /* source= */ shakaAssets.Source.DASH_IF)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4),
   new ShakaDemoAssetInfo(
@@ -687,6 +724,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dash_if_test_pattern.png',
       /* manifestUri= */ 'https://livesim.dashif.org/livesim/utc_head/periods_60/testpic_2s/Manifest.mpd',
       /* source= */ shakaAssets.Source.DASH_IF)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.LIVE)
     .addFeature(shakaAssets.Feature.MP4)
@@ -696,6 +734,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dash_if_test_pattern.png',
       /* manifestUri= */ 'https://livesim.dashif.org/dash/vod/testpic_2s/img_subs.mpd',
       /* source= */ shakaAssets.Source.DASH_IF)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.SUBTITLES)
     .addFeature(shakaAssets.Feature.MP4)
@@ -709,6 +748,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/big_buck_bunny.png',
       /* manifestUri= */ 'https://wowzaec2demo.streamlock.net/live/bigbuckbunny/manifest_mpm4sav_mvtime.mpd',
       /* source= */ shakaAssets.Source.WOWZA)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.LIVE)
     .addFeature(shakaAssets.Feature.MP4),
@@ -722,6 +762,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/art_of_motion.png',
       /* manifestUri= */ 'https://bitdash-a.akamaihd.net/content/MI201109210084_1/mpds/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.mpd',
       /* source= */ shakaAssets.Source.BITCODIN)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -731,6 +772,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/art_of_motion.png',
       /* manifestUri= */ 'https://bitdash-a.akamaihd.net/content/MI201109210084_1/m3u8s/f08e80da-bf1d-4e3d-8899-f0f6155f6efa.m3u8',
       /* source= */ shakaAssets.Source.BITCODIN)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.MP2TS)
@@ -755,6 +797,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/big_buck_bunny.png',
       /* manifestUri= */ 'https://cf-sf-video.wmspanel.com/local/raw/BigBuckBunny_320x180.mp4/manifest.mpd',
       /* source= */ shakaAssets.Source.NIMBLE_STREAMER)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -764,6 +807,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/big_buck_bunny.png',
       /* manifestUri= */ 'https://cf-sf-video.wmspanel.com/local/raw/BigBuckBunny_320x180.mp4/playlist.m3u8',
       /* source= */ shakaAssets.Source.NIMBLE_STREAMER)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.MP2TS)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -777,6 +821,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/azure.png',
       /* manifestUri= */ 'https://amssamples.streaming.mediaservices.windows.net/91492735-c523-432b-ba01-faba6c2206a2/AzureMediaServicesPromo.ism/manifest(format=mpd-time-csf)',
       /* source= */ shakaAssets.Source.AZURE_MEDIA_SERVICES)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -788,6 +833,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.AZURE_MEDIA_SERVICES)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
@@ -799,6 +845,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://ams-samplescdn.streaming.mediaservices.windows.net/11196e3d-2f40-4835-9a4d-fc52751b0323/TearsOfSteel_WAMEH264SmoothStreaming720p.ism/manifest(format=mpd-time-csf)',
       /* source= */ shakaAssets.Source.AZURE_MEDIA_SERVICES)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.SUBTITLES)
@@ -845,6 +892,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/gpac_test_pattern.png',
       /* manifestUri= */ 'https://download.tsi.telecom-paristech.fr/gpac/DASH_CONFORMANCE/TelecomParisTech/mp4-live-periods/mp4-live-periods-mpd.mpd',
       /* source= */ shakaAssets.Source.GPAC)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPERIOD)
@@ -855,6 +903,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/gpac_test_pattern.png',
       /* manifestUri= */ 'https://download.tsi.telecom-paristech.fr/gpac/DASH_CONFORMANCE/TelecomParisTech/mp4-main-single/mp4-main-single-mpd-AV-NBS.mpd',
       /* source= */ shakaAssets.Source.GPAC)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -876,6 +925,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/gpac_test_pattern.png',
       /* manifestUri= */ 'https://download.tsi.telecom-paristech.fr/gpac/DASH_CONFORMANCE/TelecomParisTech/mp4-onDemand/mp4-onDemand-mpd-AV.mpd',
       /* source= */ shakaAssets.Source.GPAC)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -914,6 +964,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.UPLYNK)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIKEY)
@@ -932,6 +983,7 @@ shakaAssets.testAssets = [
       /* source= */ shakaAssets.Source.UPLYNK)
     .addKeySystem(shakaAssets.KeySystem.PLAYREADY)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.SUBTITLES)
@@ -950,6 +1002,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://content.uplynk.com/224ac8717e714b68831997ab6cea4015.mpd',
       /* source= */ shakaAssets.Source.UPLYNK)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIKEY)
@@ -964,6 +1017,7 @@ shakaAssets.testAssets = [
       /* manifestUri= */ 'https://content.uplynk.com/1eb40d8e64234f5c9879db7045c3d48c.mpd?ad=cleardash&rays=cdefg',
       /* source= */ shakaAssets.Source.UPLYNK)
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
+    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
     .addFeature(shakaAssets.Feature.MULTIPLE_LANGUAGES)
@@ -984,6 +1038,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/apple_test_pattern.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/apple-advanced-stream-fmp4/master.m3u8',
       /* source= */ shakaAssets.Source.APPLE)
+      .markAsDisabled()
       .addFeature(shakaAssets.Feature.HLS)
       .addFeature(shakaAssets.Feature.MP4)
       .addFeature(shakaAssets.Feature.CAPTIONS)
@@ -1011,6 +1066,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/bayerischer_rundfunk.png',
       /* manifestUri= */ 'https://irtdashreference-i.akamaihd.net/dash/live/901161/keepixo1/manifestBR2.mpd',
       /* source= */ shakaAssets.Source.IRT)
+      .markAsDisabled()
       .addFeature(shakaAssets.Feature.DASH)
       .addFeature(shakaAssets.Feature.MP4)
       .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -1020,6 +1076,7 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/bayerischer_rundfunk.png',
       /* manifestUri= */ 'https://irtdashreference-i.akamaihd.net/dash/live/901161/keepixo1/playlistBR2.m3u8',
       /* source= */ shakaAssets.Source.IRT)
+      .markAsDisabled()
       .addFeature(shakaAssets.Feature.HLS)
       .addFeature(shakaAssets.Feature.MP4)
       .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
