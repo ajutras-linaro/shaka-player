@@ -203,7 +203,6 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/dark_truth.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/bbb-dark-truths-hls/hls.m3u8',
       /* source= */ shakaAssets.Source.SHAKA)
-    .markAsDisabled()
     .addDescription('A serious documentary about a problem plaguing video developers.') // eslint-disable-line max-len
     .addFeature(shakaAssets.Feature.HLS)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
@@ -329,7 +328,6 @@ shakaAssets.testAssets = [
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/sintel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/shaka-demo-assets/sintel-mp4-only/dash.mpd',
       /* source= */ shakaAssets.Source.SHAKA)
-    .markAsDisabled()
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.HIGH_DEFINITION)
     .addFeature(shakaAssets.Feature.MP4)
