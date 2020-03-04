@@ -1101,7 +1101,7 @@ shakaAssets.testAssets = [
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
-    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)	
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test')
     .markAsFeatured(''),
 
@@ -1203,7 +1203,7 @@ shakaAssets.testAssets = [
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=e06c39f1151da3df&provider=widevine_test'),
 
    new ShakaDemoAssetInfo(
-      /* name= */ 'Widevine DASH Policy Test(GTS): Secure video path required (MP4,H264)',
+      /* name= */ 'Widevine DASH Policy Test(GTS): SVP required (MP4,H264)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1214,7 +1214,7 @@ shakaAssets.testAssets = [
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=0894c7c8719b28a0&provider=widevine_test'),
 
    new ShakaDemoAssetInfo(
-      /* name= */ 'Widevine DASH Policy Test(GTS): Secure video path required (MP4,VP9)',
+      /* name= */ 'Widevine DASH Policy Test(GTS): SVP required (MP4,VP9)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/vp9/tears/tears.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1225,7 +1225,7 @@ shakaAssets.testAssets = [
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=0894c7c8719b28a0&provider=widevine_test'),
 
    new ShakaDemoAssetInfo(
-      /* name= */ 'Widevine DASH Policy Test(GTS): Secure video path required (MP4,H265)',
+      /* name= */ 'Widevine DASH Policy Test(GTS): SVP required (MP4,H265)',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1236,7 +1236,7 @@ shakaAssets.testAssets = [
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=0894c7c8719b28a0&provider=widevine_test'),
 
    new ShakaDemoAssetInfo(
-      /* name= */ 'Widevine DASH Policy Test(GTS): HDCP + secure video path required',
+      /* name= */ 'Widevine DASH Policy Test(GTS): HDCP + SVP required',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
@@ -1247,7 +1247,7 @@ shakaAssets.testAssets = [
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?video_id=efd045b1eb61888a&provider=widevine_test'),
 
    new ShakaDemoAssetInfo(
-      /* name= */ 'Widevine DASH Policy Test(GTS): 30s license duration (fails at ~30s)',
+      /* name= */ 'Widevine DASH Policy Test(GTS): 30s license duration',
       /* iconUri= */ 'https://storage.googleapis.com/shaka-asset-icons/tears_of_steel.png',
       /* manifestUri= */ 'https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd',
       /* source= */ shakaAssets.Source.CUSTOM)
