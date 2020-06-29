@@ -46,7 +46,6 @@ shakaAssets.Source = {
   IRT: 'IRT',
 };
 
-
 /** @enum {string} */
 shakaAssets.KeySystem = {
   CLEAR_KEY: 'org.w3.clearkey',
@@ -55,7 +54,6 @@ shakaAssets.KeySystem = {
   WIDEVINE: 'com.widevine.alpha',
   CLEAR: 'no drm protection',
 };
-
 
 /** @enum {string} */
 shakaAssets.Feature = {
@@ -1046,7 +1044,7 @@ shakaAssets.testAssets = [
     .addKeySystem(shakaAssets.KeySystem.WIDEVINE)
     .addFeature(shakaAssets.Feature.DASH)
     .addFeature(shakaAssets.Feature.MP4)
-    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)	
+    .addFeature(shakaAssets.Feature.ULTRA_HIGH_DEFINITION)
     .addLicenseServer('com.widevine.alpha', 'https://proxy.uat.widevine.com/proxy?provider=widevine_test')
     .markAsFeatured(''),
 
